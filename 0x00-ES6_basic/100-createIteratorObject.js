@@ -1,6 +1,6 @@
 export default function createIteratorObject(report) {
   let result = [];
-  for const value of Object.values(report.allEmployees)) {
+  for (const value of Object.values(report.allEmployees)) {
     result = [...result, ...value];
   }
 

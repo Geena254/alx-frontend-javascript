@@ -1,3 +1,10 @@
 export default function createReportObject(employeesList) {
-  return reportWithIterator.join('|');
+  return {
+    allEmployees: {
+      ...employeesList,
+    },
+    getNumberOfDepartments(employeesList) {
+      return Object.keys(employeesList).length;
+    },
+  };
 }
